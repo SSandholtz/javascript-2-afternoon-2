@@ -125,7 +125,21 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
   Have divider return an Array with the first item in the array being the evens array (all the even values from numbersArray) and the second item in the Array being the odds array (all the odd values from numbersArray).
 */
 
-//Code Here
+function divider (numbersArray) {
+  let evenValues = []
+  let oddValues = []
+  let dividedValues = []
+  for (let i = 0; i < numbersArray.length; i++) {
+  if (numbersArray[i] % 2 == 0) {
+    evenValues.push(numbersArray[i])
+  } else {
+    oddValues.push(numbersArray[i])
+  }
+}
+dividedValues.push(evenValues, oddValues)
+
+return dividedValues
+}
 
 
 
@@ -137,16 +151,23 @@ var getRandomArbitrary = function() {
 };
 // Do not edit the code above.
 
-/* 
-  var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
-  Above you're given a function that will return a random number between 0 and 30. There is also a commented out array full of numbers to help you visualize what your function will be receiving.
-  Write a function named finder that will take in an array as an argument.
-  It will then  get a random number (by invoking getRandomArbitrary).
-  Loop through the array to see if that random number is in the array. 
-  If it is, return true, if it's not, return false
-*/
 
-//Code Here
+  var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
+  // Above you're given a function that will return a random number between 0 and 30. There is also a commented out array full of numbers to help you visualize what your function will be receiving.
+  // Write a function named finder that will take in an array as an argument.
+  // It will then  get a random number (by invoking getRandomArbitrary).
+  // Loop through the array to see if that random number is in the array. 
+  // If it is, return true, if it's not, return false
+
+function finder(getRandomArbitrary) {
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers === getRandomArbitrary) {
+      
+    }
+    
+  }
+  
+}
 
 
 
